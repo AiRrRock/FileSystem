@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+
+<?import javafx.scene.media.MediaView?>
+<GridPane fx:id="pane" fx:controller="is.this_way.better.filesystem.gui.controllers.MainWindowController"
+      xmlns:fx="http://javafx.com/fxml"  gridLinesVisible="false" alignment="TOP_LEFT">
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="0" prefHeight="40" maxHeight="40" alignment="TOP_LEFT" >
+        <Button text="second" fx:id="turnOffButton" onAction="#closeFileSystem" />
+        <Button text="Do not touch" fx:id="doomButton" onAction="#doomButtonPressed"/>
+    </HBox>
+    <ProgressIndicator fx:id="unfinishedProcessIndicator" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="32" prefHeight="32" maxHeight="32" maxWidth="32" />
+    <TreeView HBox.hgrow="ALWAYS" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS"  GridPane.hgrow="ALWAYS" maxWidth="Infinity" minWidth="250" fx:id="hierarchy" />
+   </GridPane>

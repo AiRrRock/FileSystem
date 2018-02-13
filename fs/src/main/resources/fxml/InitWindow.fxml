@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<HBox fx:controller="is.this_way.better.filesystem.gui.controllers.InitialWindowController"
+        xmlns:fx="http://javafx.com/fxml" minWidth="400">
+    <padding><Insets top="5" right="10" bottom="10" left="20"/></padding>
+    <GridPane alignment="center" hgap="10" vgap="10" >
+        <Button text="Create file system" GridPane.columnIndex="1" GridPane.rowIndex="0"
+                GridPane.columnSpan="6" onAction="#createFileSystem"/>
+        <Button text="Choose file system"
+                GridPane.columnIndex="1" GridPane.rowIndex="1"
+                GridPane.columnSpan="6" onAction="#chooseFileSystem"/>
+    </GridPane>
+</HBox>
+

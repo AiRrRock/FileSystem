@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<GridPane
+    xmlns="http://javafx.com/javafx"
+    xmlns:fx="http://javafx.com/fxml"
+    fx:controller="is.this_way.better.filesystem.gui.controllers.FolderCreationWindowController">
+    <padding><Insets top="5"  bottom="5" /></padding>
+    <Label fx:id="creationLabel" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="objectName" onAction="#createFolder" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.columnSpan="3"/>
+<GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+    <padding><Insets top="10" bottom="5"/></padding>
+    <Button fx:id="actionButton" text="Create" onAction="#createFolder" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Button fx:id="cancelButton" text="Cancel" onAction="#closeWindow" GridPane.rowIndex="1" GridPane.columnIndex="1" alignment="BASELINE_RIGHT"/>
+</GridPane>
+</GridPane>

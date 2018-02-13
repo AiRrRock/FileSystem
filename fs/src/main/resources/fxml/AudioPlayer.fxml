@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.media.MediaView?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="is.this_way.better.filesystem.gui.controllers.AudioPlayerWindowController">
+    <HBox>
+        <Button text="open" visible="false"/>
+    </HBox>
+    <Button fx:id="playButton" onAction="#playPause" GridPane.rowIndex="0" GridPane.columnIndex="0" visible="true"/>
+    <MediaView visible="false" GridPane.fillWidth="true" fx:id="mediaView" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+    <TreeView  fx:id="playList" GridPane.rowIndex="0" GridPane.columnIndex="1" visible="false"/>
+    <Button fx:id="addSong" alignment="TOP_RIGHT" GridPane.rowIndex="0" GridPane.columnIndex="1" visible="false"/>
+
+</GridPane>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="is.this_way.better.filesystem.gui.controllers.ErrorWindowController" alignment="TOP_CENTER">
+    <TextField fx:id="errorMessage" editable="false" alignment="CENTER" VBox.vgrow="ALWAYS"  />
+    <Button fx:id="okButton" text="Ok" onAction="#okPressed"  alignment="CENTER"/>
+</VBox>
+

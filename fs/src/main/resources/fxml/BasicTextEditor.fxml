@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="is.this_way.better.filesystem.gui.controllers.TextEditorController">
+    <top>
+        <MenuBar fx:id="menuBar">
+            <menus>
+
+                <Menu text="_File" mnemonicParsing="true">
+                    <items>
+                        <MenuItem fx:id="newFile" text="New" visible="false"></MenuItem>
+                        <MenuItem fx:id="openFile" text="Open ..." visible="false"></MenuItem>
+                        <MenuItem fx:id="saveFile" text="Save" onAction="#saveChanges" disable="true"></MenuItem>
+                        <MenuItem fx:id="readNextPart" text="NextPart" onAction="#getNextPart"/>
+                        <MenuItem text="Save As ..." visible="false" ></MenuItem>
+
+                        <SeparatorMenuItem></SeparatorMenuItem>
+
+                        <MenuItem fx:id="exit" text="Exit" onAction="#closeWindow"></MenuItem>
+                    </items>
+                </Menu>
+
+                <Menu text="_Edit" mnemonicParsing="true" visible="false">
+                    <items>
+                        <MenuItem text="Cut" ></MenuItem>
+                        <MenuItem text="Copy" ></MenuItem>
+                        <MenuItem text="Paste" ></MenuItem>
+                        <MenuItem text="Delete" ></MenuItem>
+
+                        <SeparatorMenuItem></SeparatorMenuItem>
+
+                        <MenuItem text="Select All" ></MenuItem>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+
+    <center>
+        <TextArea fx:id="textPane">
+        </TextArea>
+    </center>
+</BorderPane>

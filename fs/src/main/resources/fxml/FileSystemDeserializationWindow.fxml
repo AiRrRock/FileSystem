@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+
+<?import javafx.scene.media.MediaView?>
+
+<GridPane fx:id="pane" fx:controller="is.this_way.better.filesystem.gui.controllers.FileSystemDeserializationWindowController"
+      xmlns:fx="http://javafx.com/fxml" minWidth="400" gridLinesVisible="false" alignment="CENTER">
+    <ProgressIndicator  fx:id="progressIndicator" GridPane.rowIndex="0" GridPane.valignment="CENTER" GridPane.halignment="CENTER" GridPane.columnIndex="1" GridPane.fillWidth="true" prefWidth="32" prefHeight="32" maxHeight="32" maxWidth="32"  />
+    <TextField editable="false" fx:id="action" GridPane.rowIndex="1" GridPane.hgrow="ALWAYS" minWidth="500" GridPane.columnIndex="1" GridPane.halignment="CENTER" alignment="CENTER" />
+    <Button fx:id="openFileSystem" text="Open" onAction="#openFileSystem" disable="true" visible="false" GridPane.fillWidth="true"  GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    <Button fx:id="startDeserializationButton" text="Load file system" onAction="#startDeserialization" disable="false" visible="true" GridPane.fillWidth="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+</GridPane>
